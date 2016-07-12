@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Pawillion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script type = "text/javascript" src = "prefixfree.js"></script>
+    <script type = "text/javascript" src = "jquery.js"></script>
+    <script>
+    $( function() {
+        var zz = document.getElementsByClassName( 'slide' ),//Получаем список слайдов
+        counter = 2,                                        // Установка счетчика в средний слайд
+        prev = $( '.prev' ),                                // Кнопка назад
+        next = $( '.next' );                                // Кнопка вперед
+
+    prev.click( function() {                                // Реакция на кнопку назад
+        counter++;
+        if ( next.css( 'display', 'none' ) ) {
+            next.css( 'display', 'block' );                 // Обработка видимости кнопок
+        }
+        if ( counter == zz.length ) {
+            prev.css( 'display', 'none' );
+        }
+        for ( var slide in zz ) {                           // Анимация слайдов
+            var art = $( zz[slide] );
+            var x = +( art.css('marginLeft' ).substring( 0 , art.css( 'marginLeft' ).length-2 ) ) + 1400;
+            art.css( { 'marginLeft':x } );
+        }
+
+
+
+    });
+
+    next.click( function() {                                // Реакция на кнопку вперед
+        counter--;
+        if ( prev.css( 'display', 'none' ) ) {
+            prev.css( 'display', 'block' );                 // Обработка видимости кнопок
+        }
+        if ( counter == 1 ) {
+            next.css( 'display', 'none' );
+        }
+        for ( var slide in zz ) {                           // Анимация слайдов
+            var art = $( zz[slide] );
+            var x = +( art.css( 'marginLeft' ).substring( 0 , art.css( 'marginLeft' ).length-2 ) ) - 1400;
+            art.css( { 'marginLeft':x } )
+        }
+
+    });
+});
+
+    </script>
+
+
+</head>
+<body>
+    <header>
+      <div class = 'socials'>
+          <a href='http://twitter.com'><img src = 'i/twi.png' class = 'soc'></a>
+          <a href='http://facebook.com'><img src = 'i/fb.png' class = 'soc'></a>
+          <a href='http://instagram.com'><img src = 'i/inst.png' class = 'soc'></a>
+      </div>
+      <div class='wrapper'>
+          <div class="logo1"></div>
+      </div>
+      <div class='wrapper'>
+          <div class="line"></div>
+          <div class="logo"></div>
+          <div class="line1"></div>
+      </div>
+      <div class='wrapper'>
+          <div class='project'>Проект інноваційного коворкінгу, де учасники мали би можливість разом працювати, спілкуватися, організовувати та відвідувати події.</div>
+      </div>
+      <div class='wrapper'>
+          <input class='email' type='text' placeholder = 'Введіть ваш e-mail'>
+          <input class='submit' type='submit' value='Бути у курсі'>
+      </div>
+    </header>
+
+
+    <main>
+        <div class='wrapper'>
+            <div class="hz"><img src="i/hz.png"></div>
+            <div class="event">
+                <div><h3>Ми гуртуємо навколо PAWILLION спільноту цікавих та активних людей</h3></div>
+                <div class = "underline"></div>
+                <div>
+                Коворкінг стане простором взаємодії, місцем тяжіння
+                для креативних та інновативних індустрій міста,
+                середовищем творення нового бізнесу
+                </div>
+                <input type='button' class='eventbtn' value='Я хочу провести подію в PAWILLION'>
+            </div>
+        </div>
+        <div class='wrapper'>
+            <div class="work">
+                <div><h3>Чому PAWILLION?</h3></div>
+                <div class = "underline"></div>
+                <div>
+                Ми знаходимось в колишньому павільйоні <a href='http://www.irpoznan.com.pl/strona,pawilon-rzemiosla-na-powszechnej-wystawie-krajowej.html'>Wystawy Krajowej</a> в
+                Стрийському Парку,де був павільйон банку і який був
+                найвідвідуванішим павільйоном виставки. Це будівля на 700 кв м,
+                яка зараз в закинутому стані і якій ми зараз надаємо друге життя
+                для проекту коворкінгу
+                </div>
+                <input type='button' class='workbtn' value='Я хочу працювати в PAWILLION'>
+            </div>
+            <div class="round"><img src="i/round.png"></div>
+        </div>
+
+        <div class = 'discuss'><img src="i/discussion.png"></div>
+
+
+
+        <div class = 'container'>
+            <div class="slider-box">
+                <div class='slider'>
+                    <div class = 'slide slide1'>
+                        <div>
+                            <img src="i/prostir_ban.jpg">
+                        </div>
+                        <div>
+                            <div class = 'shortart'>
+                                <span>26 Вересня 2013</span> Академічний корпус УКУ, вул. Стрийська 29а
+                            </div>
+                            <div class = 'eventtheme'>
+                                <h1>Міський простір: початок змін</h1>
+                            </div>
+                            <div class = 'eventtext'>
+                                Як створити новий простір у місті? Простір, в якому ми хочемо
+                                жити? Львів`яни вже змінюють простір у Львові і поза ним. Як
+                                зробити це рухом, мати систему влади на своєму боці? Чи потрібні
+                                для цього гроші і хто має фінансувати такі проекти?
+                            </div>
+                            <input type='button' class='details' value = 'Деталі події'>
+                        </div>
+                    </div>
+
+                    <div class = 'slide slide2'>
+                        <div>
+                            <img src="i/prostir_ban.jpg">
+                        </div>
+                        <div>
+                            <div class = 'shortart'>
+                                <span>26 Вересня 2013</span> Академічний корпус УКУ, вул. Стрийська 29а
+                            </div>
+                            <div class = 'eventtheme'>
+                                <h1>Міський простір: початок змін</h1>
+                            </div>
+                            <div class = 'eventtext'>
+                                Як створити новий простір у місті? Простір, в якому ми хочемо
+                                жити? Львів`яни вже змінюють простір у Львові і поза ним. Як
+                                зробити це рухом, мати систему влади на своєму боці? Чи потрібні
+                                для цього гроші і хто має фінансувати такі проекти?
+                            </div>
+                            <input type='button' class='details' value = 'Деталі події'>
+                        </div>
+                    </div>
+
+                    <div class = 'slide slide3'>
+                        <div>
+                            <img src="i/prostir_ban.jpg">
+                        </div>
+                        <div>
+                            <div class = 'shortart'>
+                                <span>26 Вересня 2013</span> Академічний корпус УКУ, вул. Стрийська 29а
+                            </div>
+                            <div class = 'eventtheme'>
+                                <h1>Міський простір: початок змін</h1>
+                            </div>
+                            <div class = 'eventtext'>
+                                Як створити новий простір у місті? Простір, в якому ми хочемо
+                                жити? Львів`яни вже змінюють простір у Львові і поза ним. Як
+                                зробити це рухом, мати систему влади на своєму боці? Чи потрібні
+                                для цього гроші і хто має фінансувати такі проекти?
+                            </div>
+                            <input type='button' class='details' value = 'Деталі події'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prev"></div>
+                <div class="next"></div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+      <div class='wrapper'>
+          <div class = 'foottext'>
+              <div>PAWILLION</div>
+              <div>Телефон для довідок: +38 (093) 126 14 14</div>
+          </div>
+          <div class = 'socials1'>
+              <a href='http://twitter.com'><img src = 'i/twi.png' class = 'soc'></a>
+              <a href='http://facebook.com'><img src = 'i/fb.png' class = 'soc'></a>
+              <a href='http://instagram.com'><img src = 'i/inst.png' class = 'soc'></a>
+          </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>

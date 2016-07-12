@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1400px;
+}
+header {
+    background: url('i/background.png');
+    width: 100%;
+    height: 345px;
+    vertical-align: middle;
+}
+.socials {
+    margin-left: 75%;
+}
+.soc {
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    flex: 1;
+    background: url('i/logo.png') no-repeat;
+    height: 45px;
+    min-width: 350px;
+}
+.logo1 {
+    background: url('i/prostir.png') no-repeat;
+    height: 13px;
+    width: 199px;
+    margin-bottom: 50px;
+}
+.line,
+.line1 {
+    flex: 1;
+    background-color: orange;
+    height: 1px;
+    width: auto;
+    margin: 1.4em 40px;
+}
+.line {
+    margin-left: 250px;
+}
+.line1 {
+    margin-right: 250px;
+}
+main .wrapper {
+    margin-bottom: 40px;
+}
+input[type='button'],
+input[type='submit'] {
+    cursor: pointer;
+}
+input[type='button']:hover,
+input[type='submit']:hover {
+    opacity: 0.8;
+}
+.project {
+    width: 380px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
+.email,
+.submit {
+    margin-top: 20px;
+    height: 32px;
+    border-radius: 152px;
+    border: none;
+}
+.email {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.submit {
+    margin-left: 5px;
+    width: 100px;
+    background-color: #81BB2E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+main {
+    width: 100%;
+    height: 100%;
+}
+.hz {
+    position: relative;
+    top: -35px;
+    left: 55px;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 54px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 1;
+}
+h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.event div,
+.work div {
+    width: 450px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.eventbtn {
+    border: none;
+    height: 70px;
+    background: #D98F00;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.work div {
+    width: 500px;
+    padding-right: 80px;
+    font-weight: 700;
+}
+.workbtn {
+    border: none;
+    height: 70px;
+    background: #9DAA14;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.event .underline,
+.work .underline {
+    position: relative;
+    top: -15px;
+    margin-left: 30px;
+    height: 1px;
+    border-top: 1px solid orange;
+    width: 200px;
+}
+.discuss {
+    margin-left: 130px;
+}
+.container {
+    width: 100%;
+    height: 600px;
+    padding-top: 25px;
+    overflow: hidden;
+}
+.slider-box {
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+.slider {
+    background: url('i/slider.png');
+    width: 2800;
+    height: 423px;
+    vertical-align: middle;
+    margin: 0 0 90px 0;
+    z-index: -1;
+}
+.slide {
+    display: flex;
+    width: 100%;
+    transition: 1s linear;
+}
+.slide1 {
+    margin-left: -1400px;
+}
+.slide2 {
+    margin-top: -475px;
+}
+.slide3 {
+    margin-left: 1400px;
+    margin-top: -475px;
+}
+.shortart {
+    position: relative;
+    top: -25px;
+    left: -115px;
+}
+.shortart span {
+    color: orange;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+.slide div,
+.slide1 div {
+    flex: 1;
+}
+.slider-box .prev,
+.slider-box .next {
+    position: absolute;
+    top: 190px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: 0.4s linear;
+}
+.slider-box .prev {
+    left: 60px;
+    background: url('i/prev.png') no-repeat 0 0;
+}
+.slider-box .prev:hover,
+.slider-box .next:hover {
+    opacity: 1;
+}
+.slider-box .next {
+    right: 60px;
+    background: url('i/next.png') no-repeat 0 0;
+}
+.slide img,
+.slide1 img {
+    position: relative;
+    height: 470px;
+    top: -25px;
+    left: 200px;
+    box-shadow: 35px 0 5px -25px rgba(20, 20, 20, 0.7) z-index: 10;
+}
+.eventtheme {
+    margin-top: -20px;
+    margin-left: -120px;
+    width: 630px;
+    color: white;
+}
+.eventtext {
+    margin-top: -10px;
+    margin-left: -120px;
+    width: 630px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: white;
+}
+.details {
+    border: none;
+    height: 70px;
+    background: #9DAA14;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 80px;
+    margin-top: 30px;
+    margin-left: -120px;
+}
+footer {
+    background-color: black;
+    border-top: 20px solid black;
+    width: 100%;
+    height: 90px;
+}
+.socials1 {
+    flex: 1;
+}
+.foottext {
+    flex: 3;
+}
+.foottext div {
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.foottext div:first-child {
+    letter-spacing: 1.05px;
+}
+.foottext div:last-child {
+    font-size: 12px;
+}
